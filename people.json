@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ee"
+  },
+  "fullname": "Leanne Graham",
+  "email": "Sincere@april.biz",
+  "address": "Kulas Light",
+  "phonenumber": "177368036442"
+},
+
+{
+  "_id": {
+    "$oid": "5eee6692a27a66807cf2bea4"
+  },
+  "fullname": "Ervin Howell",
+  "email": "Shanna@melissa.tv",
+  "address": "Victor Plains",
+  "phonenumber": "010692609125"
+},
+
+{
+  "_id": {
+    "$oid": "5eee66a5a27a66807cf2bea5"
+  },
+  "fullname": "Clementine Bauch",
+  "email": "Nathan@yesenia.net",
+  "address": "Douglas Extension",
+  "phonenumber": "1463123447"
+},
+
+{
+  "_id": {
+    "$oid": "5eee66c4a27a66807cf2bea6"
+  },
+  "fullname": "Chelsey Dietrich",
+  "email": "Lucio_Hettinger@annie.ca",
+  "address": "Skiles Walks",
+  "phonenumber": "14779356430"
+}]

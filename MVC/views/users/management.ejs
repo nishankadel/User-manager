@@ -1,0 +1,137 @@
+<%- include('../partials/header') %>
+
+<!-- component -->
+<div class="overflow-x-auto">
+  <div>
+    <p
+      class="
+        font-bold
+        text-3xl
+        ml-16
+        mt-10
+        text-blue-500
+        hover:text-green-500
+        relative
+        w-max
+        one
+      "
+    >
+      <a href="/dashboard"
+        >Back<i class="bx bx-arrow-from-right" style="font-size: 25px"></i
+      ></a>
+    </p>
+  </div>
+  <div>
+    <p
+      class="
+        font-bold
+        text-3xl
+        ml-16
+        mt-3
+        text-purple-500
+        hover:text-green-500
+        relative
+        w-max
+        one
+      "
+    >
+      <a href="/add-user"
+        >Add User <i class="bx bx-user-plus" style="font-size: 25px"></i>
+      </a>
+    </p>
+  </div>
+  <div
+    class="
+      min-w-screen
+      bg-gray-100
+      flex
+      items-center
+      justify-center
+      bg-gray-100
+      overflow-hidden
+    "
+  >
+    <div class="w-full lg:w-5/6">
+      <div class="bg-white shadow-md rounded my-6">
+        <table class="min-w-max w-full table-auto">
+          <thead>
+            <tr
+              class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+            >
+              <th class="py-3 px-6 text-left">Full Name</th>
+              <th class="py-3 px-6 text-left">Email</th>
+              <th class="py-3 px-6 text-center">Address</th>
+              <th class="py-3 px-6 text-center">Phone Number</th>
+              <th class="py-3 px-6 text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-600 text-sm font-light">
+            <% if (people) { %> <% people.forEach(function(list){ %>
+
+            <tr class="border-b border-gray-200 hover:bg-gray-100">
+              <td class="py-3 px-6 text-left whitespace-nowrap">
+                <div class="flex items-center">
+                  <span class="font-medium"><%= list.fullname %></span>
+                </div>
+              </td>
+              <td class="py-3 px-6 text-left">
+                <div class="flex items-center">
+                  <span><%= list.email %></span>
+                </div>
+              </td>
+              <td class="py-3 px-6 text-center">
+                <div class="flex items-center justify-center">
+                  <span><%= list.address %></span>
+                </div>
+              </td>
+              <td class="py-3 px-6 text-center">
+                <span><%= list.phonenumber %></span>
+              </td>
+              <td class="py-3 px-6 text-center">
+                <div class="flex item-center justify-center">
+                  <div
+                    class="
+                      w-4
+                      mr-2
+                      transform
+                      hover:text-green-500
+                      hover:scale-110
+                      cursor-pointer
+                    "
+                  >
+                    <a href="/edit-user/<%= list._id %>">
+                      <i class="bx bxs-edit-alt" style="font-size: 25px"></i
+                    ></a>
+                  </div>
+
+                  <form action="/delete-user/<%= list._id %>" method="post">
+                    <div
+                      class="
+                        w-4
+                        mr-2
+                        px-3
+                        transform
+                        hover:text-red-500
+                        hover:scale-110
+                        cursor-pointer
+                      "
+                    >
+                      <button type="submit">
+                        <i class="bx bx-x" style="font-size: 30px"></i>
+                      </button>
+                    </div>
+                  </form>
+
+                </div>
+              </td>
+            </tr>
+
+            <% }); %> <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,57 @@
+<%- include('../partials/header') %>
+
+<div>
+  <p class="font-bold text-3xl ml-16 mt-10 relative w-max one">Dashboard</p>
+  <p class="font-bold text-2xl ml-20 mt-2 relative w-max one">
+    Welcome, <%= user.fullname %><br>
+     <%= user.email %>
+  </p>
+</div>
+
+<!-- component -->
+
+<div class="flex">
+  <div class="m-auto flex flex-col gap-6">
+    <!-- Orange Button -->
+    <div
+      class="
+        border-2 border-yellow-600
+        rounded-lg
+        px-3
+        py-2
+        text-yellow-400
+        cursor-pointer
+        hover:bg-yellow-600
+        hover:text-yellow-200
+      "
+    >
+      <a href="/management">Manage Users</a>
+    </div>
+
+    <!-- Orange Button -->
+    <div
+      class="
+        border-2 border-blue-600
+        rounded-lg
+        px-3
+        py-2
+        text-blue-400
+        cursor-pointer
+        hover:bg-blue-600
+        hover:text-blue-200
+        text-center
+      "
+    >
+      <a href="/users/logout">Logout</a>
+    </div>
+  </div>
+</div>
+
+<div class="fixed bottom-5 w-full text-center text-gray-400">
+  Crafted with ♡ by
+  <a class="text-blue-500" target="_blank" href="https://www.nishankadel.com.np"
+    >Nishan Kadel</a
+  >
+</div>
+
+<%- include('../partials/footer') %>

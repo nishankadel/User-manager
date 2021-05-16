@@ -1,0 +1,110 @@
+<%- include('partials/header') %>
+
+
+<!-- This is an example component -->
+<div class="font-sans">
+  <div
+    class="
+      relative
+      min-h-screen
+      flex flex-col
+      sm:justify-center
+      items-center
+      bg-gray-100
+    "
+  >
+    <div class="relative sm:max-w-sm w-full">
+      <div
+        class="
+          card
+          bg-blue-400
+          shadow-lg
+          w-full
+          h-full
+          rounded-3xl
+          absolute
+          transform
+          -rotate-6
+        "
+      ></div>
+      <div
+        class="
+          card
+          bg-red-400
+          shadow-lg
+          w-full
+          h-full
+          rounded-3xl
+          absolute
+          transform
+          rotate-6
+        "
+      ></div>
+      <div class="relative w-full rounded-3xl px-6 py-4 bg-gray-100 shadow-md">
+        <label
+          for=""
+          class="block mt-3 text-sm text-gray-700 text-center font-semibold"
+        >
+          Login or Register
+        </label>
+
+        <div class="flex mt-7 items-center text-center">
+          <hr class="border-gray-300 border-1 w-full rounded-md" />
+          <div class="block font-medium text-sm text-gray-600 w-full">
+            <i
+              class="bx bxs-user-circle bx-tada"
+              style="font-size: 100px; color: rgb(83, 83, 172)"
+            ></i>
+          </div>
+          <hr class="border-gray-300 border-1 w-full rounded-md" />
+        </div>
+
+        <div
+          class="
+            mt-7
+            bg-green-500
+            w-full
+            py-3
+            rounded-xl
+            text-center text-white
+            shadow-xl
+            hover:shadow-inner
+            focus:outline-none
+            transition
+            duration-500
+            ease-in-out
+            transform
+            hover:-translate-x
+            hover:scale-105
+          "
+        >
+          <a href="/users/login">Login</a>
+        </div>
+
+        <div
+          class="
+            mt-3
+            bg-indigo-500
+            w-full
+            py-3
+            rounded-xl
+            text-center text-white
+            shadow-xl
+            hover:shadow-inner
+            focus:outline-none
+            transition
+            duration-500
+            ease-in-out
+            transform
+            hover:-translate-x
+            hover:scale-105
+          "
+        >
+          <a href="/users/register">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/header') %>
